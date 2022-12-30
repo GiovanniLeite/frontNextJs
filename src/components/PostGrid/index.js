@@ -56,6 +56,7 @@ export default function PostGrid({ posts }) {
                             .url
                         : ''
                     }
+                    data-testid="coverPost"
                   />
                 </Link>
               </div>

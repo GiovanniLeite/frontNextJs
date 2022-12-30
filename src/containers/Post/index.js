@@ -32,6 +32,11 @@ export default function Post({ post }) {
               <div className="cover">
                 <img
                   src={get(post, 'attributes.cover.data.attributes.url', '')}
+                  title={get(
+                    post,
+                    'attributes.cover.data.attributes.alternativeText',
+                    '',
+                  )}
                 />
                 <p>
                   {get(
